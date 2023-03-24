@@ -2,8 +2,8 @@ import 'dart:io';
 
 // Escreva um programa dart para verificar se um caractere é uma vogal ou consoante.
 void main() {
-
-  print("Bem vindo ao sistema mais doido do planeta, ele não serve para absolutamente nada.");
+  print(
+      "Bem vindo ao sistema mais doido do planeta, ele não serve para absolutamente nada.");
   print("Digite qualquer tecla e pressione ENTER para prosseguir");
   String? atoa = stdin.readLineSync();
 
@@ -18,6 +18,7 @@ void main() {
 
   if (password != password2) {
     print("Senha divergente uma da outra... Encerrando o sistema!");
+    return;
   } else {
     print("Cadastrado com sucesso... Seguindo o fluxo!");
   }
@@ -34,9 +35,10 @@ void main() {
   String? password_login = stdin.readLineSync();
 
   if (password_login != password) {
-print("Senha incorreta... Encerrando o sistema!");
+    print("Senha incorreta... Encerrando o sistema!");
+    return;
   } else {
-print("Parabéns, você conseguiu logar no sistema!");
+    print("Parabéns, você conseguiu logar no sistema!");
   }
 
   print("Encerrando... até breve!");

@@ -2,7 +2,8 @@ import 'dart:io';
 
 // Escreva um programa dart para verificar se um caractere é uma vogal ou consoante.
 void main() {
-  print("Informe uma letra para saber se ele é uma vogal ou consoante:");
+  print("Informe UMA LETRA para saber se ele é uma vogal ou consoante:");
+  print("Não pode ser caractéres especiais");
   String? letra = stdin.readLineSync();
 
   if (letra == 'a' ||
@@ -26,7 +27,7 @@ void main() {
       letra == '8' ||
       letra == '9' ||
       letra == '0') {
-    print('$letra é um número');
+    print('$letra não é uma letra, e sim um número');
   } else {
     print('$letra é uma consoante');
   }
