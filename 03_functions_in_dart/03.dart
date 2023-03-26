@@ -6,8 +6,7 @@ import 'dart:math';
 void main() {
   print("------------------------------------------------");
   print("Bem vindo ao Sistema - MawMaw");
-  print("\nQual o tamanho da senha aleatória a ser gerada?");
-  print("\nInforme um número inteiro:");
+  print("\nQual o tamanho da senha aleatória a ser gerada?\nInforme um número inteiro:");
   int tamanho = int.parse(stdin.readLineSync()!);
 
   String caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()_-+={}[]|;:<>,.?/~';
